@@ -1,0 +1,16 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),,Amazon EC2,0,7166.4,85996.8,USD,"Operating system (Linux), Quantity (10), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (100 GB), Instance type (m5.8xlarge)"
+My Estimate,US East (Ohio),,Amazon Virtual Private Cloud (VPC),0,3350.7,40208.4,USD,Number of NAT Gateways (2)
+My Estimate,US East (Ohio),,Amazon RDS for PostgreSQL,0,5623.04,67476.48,USD,"Quantity (1), Pricing strategy (Standard Reserved Instances 1 Year No Upfront), Storage volume (Provisioned IOPS SSD (io1)), Provisioning IOPS (2000), Storage amount (10 TB per month), Instance type (db.m5.8xlarge)"
+My Estimate,US East (Ohio),,Application Load Balancer,0,593.13,7117.56,USD,Number of Application Load Balancers (5)
+My Estimate,US East (Ohio),,Amazon Route 53,0,502.2,6026.4,USD,Hosted Zones (1)
+My Estimate,US East (Ohio),,S3 Standard,0,1150,13800,USD,S3 Standard storage (50000 GB per month)
+My Estimate,US East (Ohio),,Data Transfer,0,0,0,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Amazon CloudFront (50 TB per month)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+,,,,,,,,
+"Note by Koulick - this was more fun! Firstly I made the Application & Web servers and the database more powerful - for faster data processing and compute. The ten EC2 instances are now m5.8xlarge. I could have saved some money here by doing a 3 year commitment, but it was under budget with a 1 year one. Same logic for DBs but also with 2000 IOPS storage. 4 load balancers for the clusters of application & web servers. ",,,,,,,,
